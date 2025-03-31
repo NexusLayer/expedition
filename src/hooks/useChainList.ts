@@ -16,28 +16,16 @@ export default function () {
   const { t } = useTranslation();
   const [chains, setChains] = React.useState<Chain[]>([
     {
-      name: "Moonbeam",
-      network: t("mainnet"),
-      rpc: ["https://moonbeam.unitedbloc.com/"],
-    },
-    {
-      name: "Moonriver",
-      network: t("mainnet"),
-      rpc: [
-        "https://moonriver.unitedbloc.com/"
-      ],
-    },
-    {
-      name: "MoonbaseAlpha",
-      displayName: "Moonbase Alpha",
+      name: "NexusTLayer",
+      displayName: "Nexus T Layer",
       network: t("testnet"),
-      rpc: ["https://moonbase.unitedbloc.com"],
+      rpc: ["https://fraa-flashbox-4646-rpc.a.stagenet.tanssi.network"],
     },
     {
-      name: "MoonbeamDevNode",
-      displayName: "Moonbeam Dev Node",
-      network: t("testnet"),
-      rpc: ["http://localhost:9944"],
+      name: "TanssiMainnet",
+      displayName: "Tanssi Mainnet",
+      network: t("mainnet"),
+      rpc: ["https://dancebox-3001.tanssi-api.network"],
     },
   ]);
 
